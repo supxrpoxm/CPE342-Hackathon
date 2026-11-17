@@ -11,4 +11,8 @@ task1/train.csv
 task1/test.csv
 task3/train.csv
 task3/test.csv
+task4/train.csv
+task4/test.csv
+task4/train/
+task4/test/
 task5/test.csv
