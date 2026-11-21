@@ -3,9 +3,10 @@ outputs/
 outputs_quick/
 *.joblib
 __pycache__/
+catboost_info/
 .ipynb_checkpoints/
 
-# competition data copied in for tasks 1, 3, 5 (task2 data is already tracked in this repo).
+# competition data copied in for tasks 1, 3, 4, 5 (task2 data is already tracked in this repo).
 # Copy train.csv / test.csv from the competition download into the folder to run the notebook.
 task1/train.csv
 task1/test.csv

@@ -10,13 +10,44 @@ One folder per task, each with its `datacard.txt` and a self-contained notebook.
 | `task4/` | Game title from screenshots | F1 macro | `task4.ipynb` (needs images + `torch`) |
 | `task5/` | Account security (unsupervised anomaly) | F3 macro | `task5.ipynb` |
 
-A task's folder appears once its owner has pushed it, so not every folder is present on every branch.
 `sample_submission.csv` is the official template; `submission_final.csv` is the combined submission (`id, task1..task5`).
 
 ## Data
-Competition data is not committed for large or per-person files (see `.gitignore`). Download `train.csv` / `test.csv` from the
-competition page and copy them into the matching `taskN/` folder before running its notebook. If a task's data is already
-tracked in the repo (e.g. `task2/`), nothing needs to be copied.
+Every task folder follows the competition layout below. Data files are **not committed** (too large, see `.gitignore`) except
+`task2/train.csv` / `task2/test.csv`: download them from the competition page and copy them into the matching folder.
+Task 4 images: https://drive.google.com/file/d/1C8csylbBo3Oab24ODGKPVom3_SDUJ_Qw/view?usp=share_link (unzip to `task4/train/` and `task4/test/`).
+
+```
+CPE342-Hackathon/
+├── task1/
+│   ├── train.csv          # Training data with labels
+│   ├── test.csv           # Test data for predictions
+│   ├── datacard.txt       # Detailed feature descriptions
+│   └── task1.ipynb
+├── task2/
+│   ├── train.csv
+│   ├── test.csv
+│   ├── datacard.txt
+│   └── task2.ipynb
+├── task3/
+│   ├── train.csv
+│   ├── test.csv
+│   ├── datacard.txt
+│   └── task3.ipynb
+├── task4/
+│   ├── train/             # Training images folder
+│   ├── test/              # Test images folder
+│   ├── train.csv          # Image labels and metadata
+│   ├── test.csv           # Image metadata
+│   ├── datacard.txt
+│   └── task4.ipynb
+├── task5/
+│   ├── test.csv           # Test data (unsupervised)
+│   ├── datacard.txt
+│   └── task5.ipynb
+├── sample_submission.csv  # Submission format template
+└── submission_final.csv   # Combined submission (id, task1..task5)
+```
 
 ## Run
 ```bash
