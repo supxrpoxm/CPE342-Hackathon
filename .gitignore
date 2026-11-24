@@ -17,3 +17,10 @@ task4/test.csv
 task4/train/
 task4/test/
 task5/test.csv
+
+# local experiment submissions / scratch files (only submission_final.csv is tracked)
+submission_*.csv
+!submission_final.csv
+*.npy
+*.log
+task4/task4_image_classification/
